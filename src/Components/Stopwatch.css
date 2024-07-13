@@ -1,0 +1,94 @@
+.h-tag{
+    text-align: center;
+  }
+.time, .box {
+    width: 100%; 
+    max-width: 450px;
+    height: 120px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.box input {
+    width: 40px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+.start, .stop, .reset {
+    color: white;
+    background-color: blue;
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.start:hover {
+    background-color: darkblue; 
+}
+
+.stop:hover {
+    background-color: darkred;
+}
+
+.reset:hover {
+    background-color: gray;
+}
+
+.stop {
+    background-color: red;
+}
+
+.reset {
+    background-color: black;
+}
+
+.b {
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.b button {
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .time, .box {
+        font-size: 16px; 
+        height: auto;  
+        padding: 10px;
+    }
+
+    .box input {
+        font-size: 16px;
+    }
+
+    .b {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .b button {
+        margin-bottom: 5px;
+    }
+}
+
+.stopwatch{
+
+    padding: 10px;
+    border-bottom: 2px solid rgb(241, 20, 20);
+  }
